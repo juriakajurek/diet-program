@@ -1,0 +1,104 @@
+@import 'base';
+
+.navbar {
+    .navbar-brand {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    a {
+        font-size: 0.875rem;
+        color: $secondary-color !important;
+    }
+    #navbarToggleExternalContent {
+        right: 1rem;
+        top: 5rem;
+    }
+    .mobile-nav {
+        background-color: $background-color;
+        position: relative !important;
+        z-index: 100;
+        border: none !important;
+        border-radius: 0.5rem;
+
+        margin: 0 !important;
+        padding: 0 !important;
+        a {
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            margin: 0.1rem 0.3rem;
+        }
+        * {
+            font-size: 1.5rem;
+            &:hover {
+                background-color: $background-color - #111111;
+            }
+        }
+        width: #{'max(33.3vw, 250px)'};
+    }
+}
+
+.btn-primary {
+    color: $secondary-color !important;
+    background-color: $salmon !important;
+    border-color: $salmon !important;
+    border-radius: 8px;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.button-link {
+    color: $link-color !important;
+}
+.info-card-section {
+    justify-content: space-between;
+    h5 {
+        padding-bottom: 1rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: $primary-color;
+        span {
+            white-space: pre;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+        color: $primary-color;
+        span {
+            white-space: pre;
+        }
+    }
+}
+
+.section {
+    margin: 0;
+}
+
+.card {
+    max-width: 400px !important;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    h5 {
+        padding-bottom: 1rem;
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        color: $primary-color;
+        span {
+            white-space: pre;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+        color: $primary-color;
+        span {
+            white-space: pre;
+        }
+    }
+}
