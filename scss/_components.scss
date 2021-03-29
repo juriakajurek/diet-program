@@ -41,7 +41,7 @@
     color: $secondary-color !important;
     background-color: $salmon !important;
     border-color: $salmon !important;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     &:hover {
         opacity: 0.9;
     }
@@ -99,6 +99,91 @@
         color: $primary-color;
         span {
             white-space: pre;
+        }
+    }
+}
+
+.prices-section {
+    .progress {
+        width: 80vw;
+        overflow: visible;
+        .dot {
+            position: relative;
+            left: -1rem;
+            top: -0.5rem;
+            width: 2rem;
+            height: 2rem;
+
+            border: solid 0.25rem white;
+            border-radius: 50%;
+
+            background-color: $secondary-color;
+        }
+        .progress-bar {
+            background-color: $secondary-color;
+        }
+    }
+    .frame {
+        width: 80vw;
+        border: solid 1px $secondary-color;
+        border-radius: 1.5rem;
+
+        display: flex;
+        flex-direction: row;
+
+        .counter {
+            flex: 2;
+            background-image: url('./images/counter.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .budget {
+            flex: 3;
+            margin: auto;
+            padding: 2rem;
+            h5 {
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 3.5rem;
+                color: $secondary-color;
+                span {
+                    font-weight: 400;
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+            }
+            p {
+                padding-left: 0.5rem;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: $primary-color;
+                span {
+                    white-space: pre;
+                }
+            }
+        }
+        .br {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            .line {
+                margin: auto;
+                width: 0;
+                height: 90%;
+                border: solid 1px $secondary-color;
+            }
+        }
+        .description {
+            margin: auto;
+            padding: 1rem;
+
+            flex: 2;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $primary-color;
+            opacity: 80%;
         }
     }
 }

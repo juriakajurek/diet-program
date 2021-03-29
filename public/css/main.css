@@ -32,7 +32,7 @@
   color: #5f308b !important;
   background-color: #ff6984 !important;
   border-color: #ff6984 !important;
-  border-radius: 8px; }
+  border-radius: 0.5rem; }
   .btn-primary:hover {
     opacity: 0.9; }
 
@@ -81,6 +81,72 @@
     .card p span {
       white-space: pre; }
 
+.prices-section .progress {
+  width: 80vw;
+  overflow: visible; }
+  .prices-section .progress .dot {
+    position: relative;
+    left: -1rem;
+    top: -0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: solid 0.25rem white;
+    border-radius: 50%;
+    background-color: #5f308b; }
+  .prices-section .progress .progress-bar {
+    background-color: #5f308b; }
+
+.prices-section .frame {
+  width: 80vw;
+  border: solid 1px #5f308b;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: row; }
+  .prices-section .frame .counter {
+    flex: 2;
+    background-image: url("./images/counter.svg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .prices-section .frame .budget {
+    flex: 3;
+    margin: auto;
+    padding: 2rem; }
+    .prices-section .frame .budget h5 {
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: #5f308b; }
+      .prices-section .frame .budget h5 span {
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3.5rem; }
+    .prices-section .frame .budget p {
+      padding-left: 0.5rem;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #333333; }
+      .prices-section .frame .budget p span {
+        white-space: pre; }
+  .prices-section .frame .br {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+    .prices-section .frame .br .line {
+      margin: auto;
+      width: 0;
+      height: 90%;
+      border: solid 1px #5f308b; }
+  .prices-section .frame .description {
+    margin: auto;
+    padding: 1rem;
+    flex: 2;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #333333;
+    opacity: 80%; }
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -122,6 +188,21 @@ body {
     line-height: 2.2rem;
     color: #333333; }
 
+.prices-section {
+  width: 100vw !important; }
+  .prices-section h5 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #5f308b; }
+    .prices-section h5 span {
+      white-space: pre; }
+  .prices-section p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #333333; }
+
 .image-container {
   max-width: 40vw;
   vertical-align: middle;
@@ -137,5 +218,5 @@ body {
     top: 1rem; }
 
 .background {
-  background: linear-gradient(178deg, #eef5fe 90%, white 90.1%);
-  min-height: 65vh; }
+  z-index: 100;
+  background: linear-gradient(181deg, white 5%, #eef5fe 5.1%, transparent 50%), linear-gradient(178deg, #eef5fe 97%, white 97.1%); }
