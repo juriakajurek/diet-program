@@ -197,6 +197,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="h-auto p-0 my-5">
                 <div class="background m-0">
                     <div
@@ -264,11 +265,35 @@
                             role="progressbar"
                             style="width: 50%"
                         ></div>
-                        <div class="dot"></div>
+
+                        <button
+                            type="button"
+                            class="dot btn"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="60 pacjentów"
+                        ></button>
                     </div>
+                    <!-- <input
+                        class="my-5"
+                        type="range"
+                        min="1"
+                        max="120"
+                        step="1"
+                        val="60"
+                    />                    -->
+
                     <div class="frame my-5 p-4">
                         <div class="counter">
-                            <h5 class="">60</h5>
+                            <div
+                                class="container d-flex flex-row justify-content-center align-items-center"
+                            >
+                                <div class="btn-group-vertical">
+                                    <button type="button" class="btn">▲</button>
+                                    <button type="button" class="btn">▼</button>
+                                </div>
+                                <h5 class="">60</h5>
+                            </div>
                         </div>
                         <div class="budget">
                             <h5 class="mx-auto">
@@ -281,13 +306,26 @@
                         </div>
                         <p class="description">
                             Każdy kolejny pacjent ponad wskazany limit to koszt
-                            6 zł, doliczany do faktury. W każdej chwili możesz
-                            zmienić swój limit, który będzie zaktualizowany wraz
-                            z nowym cyklem rozliczeniowym
+                            <span>6 zł</span>, doliczany do faktury. W każdej
+                            chwili możesz zmienić swój limit, który będzie
+                            zaktualizowany wraz z nowym cyklem rozliczeniowym
                         </p>
                     </div>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-highlighted btn-sm px-4 m-1"
+                    >
+                        Zamawiam wybrany pakiet
+                    </button>
                 </div>
             </div>
+
+            <!-- <div class="try-it-out-section min-vw-100 min-vh-50 m-0 py-5">
+                <div class="row d-flex flex-column align-items-center">
+                    <div class="col col-lg py-5"></div>
+                </div>
+            </div> -->
         </div>
     </body>
     <script
@@ -300,5 +338,6 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"
     ></script>
+
     <script src="script.js"></script>
 </html>
