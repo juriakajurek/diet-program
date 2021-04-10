@@ -1,57 +1,89 @@
 @media (max-width: 992px) {
+  .navbar {
+    background-color: white !important;
+    box-shadow: 0px 0.25rem 1.5rem rgba(51, 51, 51, 0.08);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important; }
+    .navbar .navbar-brand {
+      margin-right: 0 !important;
+      max-width: 40% !important;
+      line-height: 1.2rem !important; }
+      .navbar .navbar-brand p {
+        white-space: pre-line !important; }
+    .navbar .btn-primary {
+      margin: 0 !important; }
+  .info-card-section {
+    width: 100% !important; }
+    .info-card-section h5 {
+      padding-right: 1.5rem !important;
+      font-size: 1.25rem !important;
+      line-height: 140% !important; }
+    .info-card-section p {
+      font-size: 1rem !important;
+      line-height: 160% !important; }
+  .card p {
+    opacity: 0.64 !important;
+    font-size: 0.875rem !important;
+    line-height: 160% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important; }
   .prices-section .frame {
+    width: 90vw !important;
     flex-direction: column !important; }
+    .prices-section .frame .label.budget-label {
+      position: relative !important;
+      padding-top: 2rem;
+      margin-bottom: 0 !important; }
     .prices-section .frame .counter {
       background-image: url("./images/counter-down.svg") !important;
+      margin-top: 1rem;
       padding-bottom: 1rem; }
     .prices-section .frame .br {
       visibility: hidden !important; }
     .prices-section .frame .budget {
-      text-align: center !important; } }
+      text-align: center !important; }
+      .prices-section .frame .budget h5 {
+        margin-bottom: 0 !important; }
+        .prices-section .frame .budget h5 span {
+          font-size: 1.5rem !important; }
+  .order-button {
+    display: none !important; }
+    .order-button.mobile {
+      display: inline-block !important; } }
 
 .navbar .navbar-brand {
+  display: flex;
+  flex-direction: row;
   font-weight: 600;
-  font-size: 1rem; }
-
-.navbar a {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #5f308b !important; }
+  .navbar .navbar-brand p {
+    margin: auto; }
 
-.navbar #navbarToggleExternalContent {
-  right: 1rem;
-  top: 5rem; }
-
-.navbar .mobile-nav {
-  background-color: #eef5fe;
-  position: relative !important;
-  z-index: 100;
-  border: none !important;
-  border-radius: 0.5rem;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: max(33.3vw, 250px); }
-  .navbar .mobile-nav a {
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin: 0.1rem 0.3rem; }
-  .navbar .mobile-nav * {
-    font-size: 1.5rem; }
-    .navbar .mobile-nav *:hover {
-      background-color: #dde4ed; }
+.navbar .btn-primary {
+  color: white !important; }
 
 .btn-primary {
-  color: #5f308b !important;
+  color: white !important;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 140%;
   background-color: #ff6984 !important;
   border-color: #ff6984 !important;
   border-radius: 0.5rem; }
   .btn-primary:hover {
     opacity: 0.9; }
 
-.button-link {
+.btn-link {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 140%;
   color: #2f80ed !important; }
 
 .btn-highlighted {
-  padding: 1.5rem 3rem !important;
+  padding: 1rem 3rem !important;
   background: linear-gradient(90deg, #7c3dba 0%, #b448c6 100%);
   color: white !important;
   border: none;
@@ -60,9 +92,12 @@
   line-height: 1.5rem; }
 
 .info-card-section {
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 80%; }
   .info-card-section h5 {
     padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 5rem;
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.5rem;
@@ -70,6 +105,7 @@
     .info-card-section h5 span {
       white-space: pre; }
   .info-card-section p {
+    opacity: 0.8;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.8rem;
@@ -87,7 +123,7 @@
   background-color: transparent; }
   .card h5 {
     padding-bottom: 1rem;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 1.4rem;
     color: #333333; }
@@ -101,39 +137,23 @@
     .card p span {
       white-space: pre; }
 
-.tooltip {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: white; }
-  .tooltip .tooltip-inner {
-    padding: 0.75rem;
-    border-radius: 0.5rem; }
-
-.prices-section .progress {
-  width: 80vw;
-  height: 0.5rem;
-  overflow: visible;
-  border-radius: 0.5rem; }
-  .prices-section .progress .dot {
-    position: relative;
-    left: -1rem;
-    top: -0.75rem;
-    width: 2rem;
-    height: 2rem;
-    border: solid 0.25rem white;
-    border-radius: 50%;
-    background-color: #5f308b; }
-  .prices-section .progress .progress-bar {
-    background-color: #5f308b;
-    border-radius: 0.5rem; }
-
 .prices-section .frame {
   width: 80vw;
+  max-width: 1400px;
   border: solid 1px #5f308b;
   border-radius: 1.5rem;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative; }
+  .prices-section .frame .label {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #5f308b;
+    background-color: white;
+    padding: 0.5rem;
+    position: absolute;
+    top: -1.25rem; }
   .prices-section .frame .counter {
     flex: 2;
     background-image: url("./images/counter-right.svg");
@@ -153,6 +173,25 @@
         margin: 0.125rem;
         background-color: #ededed;
         border-radius: 1rem; }
+    .prices-section .frame .counter input[type='number']::-webkit-outer-spin-button,
+    .prices-section .frame .counter input[type='number']::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .prices-section .frame .counter input[type='number'] {
+      -moz-appearance: textfield;
+      background-color: transparent;
+      border: none;
+      font-weight: 400;
+      font-size: 4rem;
+      line-height: 4.5rem;
+      color: #5f308b;
+      width: 10rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+      margin: 0; }
+      .prices-section .frame .counter input[type='number']:focus {
+        outline: none; }
     .prices-section .frame .counter h5 {
       padding: 2rem;
       padding-right: 3rem;
@@ -173,7 +212,7 @@
       color: #5f308b; }
       .prices-section .frame .budget h5 span {
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 3.5rem; }
     .prices-section .frame .budget p {
       padding-left: 0.5rem;
@@ -204,6 +243,11 @@
     .prices-section .frame .description span {
       white-space: pre; }
 
+.order-button {
+  display: inline-block; }
+  .order-button.mobile {
+    display: none; }
+
 .try-it-out-section {
   min-height: 50vh;
   max-height: 1000px;
@@ -211,6 +255,63 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
+
+.footer {
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
+
+@media (max-width: 992px) {
+  .top-section {
+    margin-right: 0 !important;
+    margin: auto !important; }
+    .top-section.admission {
+      min-height: min(50vh, 880px) !important; }
+    .top-section h5 {
+      text-align: center !important; }
+      .top-section h5 .subtitle {
+        display: block;
+        padding-top: 1rem !important;
+        color: #5f308b !important;
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+        font-weight: 700 !important; }
+    .top-section p {
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
+      font-weight: 400 !important;
+      padding-right: 0.5rem !important;
+      padding-left: 0.5rem !important;
+      text-align: center !important; }
+    .top-section .btn-container {
+      flex-direction: column !important;
+      align-items: center !important; }
+    .top-section .image-container img {
+      height: 45vh !important; }
+  .prices-section .col p {
+    opacity: 0.8;
+    font-size: 1.25rem !important;
+    line-height: 2rem !important; }
+  .prices-section .budget p {
+    font-size: 1rem !important; }
+  .prices-section .budget .description {
+    font-size: 0.875rem !important;
+    line-height: 1.5rem !important; }
+  .prices-section .order-button {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important; }
+  .hero-section .hero-card .card-body p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important; }
+  .hero-section .contact-container {
+    width: 100% !important;
+    flex-direction: column !important; }
+    .hero-section .contact-container div {
+      display: flex !important;
+      flex-direction: column !important; } }
 
 body {
   overflow-x: hidden;
@@ -230,7 +331,7 @@ body {
 .top-container {
   width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient(183deg, #eef5fe 90vh, white 90.1vh);
+  background-image: linear-gradient(183deg, #eef5fe 94vh, white 94.1vh);
   color: #333333;
   height: auto;
   min-height: 75vh;
@@ -239,35 +340,98 @@ body {
   justify-content: center; }
 
 .top-section {
-  min-height: min(90vh, 1600px) !important; }
-  .top-section h5 {
-    font-weight: 800;
+  min-height: min(80vh, 1440px) !important; }
+  .top-section h5,
+  .top-section .subtitle {
+    font-weight: 700;
     font-size: 2.5rem;
     line-height: 3rem;
     color: #5f308b; }
-    .top-section h5 span {
+    .top-section h5 .pre,
+    .top-section .subtitle .pre {
       white-space: pre; }
   .top-section p {
+    opacity: 0.8;
+    padding-right: 8rem;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #333333; }
+  .top-section .btn-container {
+    display: flex;
+    align-items: flex-start; }
 
 .prices-section {
   width: 100vw !important;
   text-align: center; }
   .prices-section h5 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 2.5rem;
     line-height: 3rem;
     color: #5f308b; }
     .prices-section h5 span {
       white-space: pre; }
   .prices-section p {
+    opacity: 0.8;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: 1.25rem;
+    line-height: 160%;
     color: #333333; }
+
+.hero-section {
+  padding-top: 5rem; }
+  .hero-section .hero-card {
+    background-color: #f7f7f7;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .hero-section .hero-card .card-img-top {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      position: absolute;
+      top: -4rem; }
+    .hero-section .hero-card .card-body {
+      margin-top: 4rem;
+      text-align: center; }
+      .hero-section .hero-card .card-body h5 {
+        margin-bottom: 1rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #333333; }
+      .hero-section .hero-card .card-body p {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: #333333; }
+      .hero-section .hero-card .card-body .contact-container {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .hero-section .hero-card .card-body .contact-container div {
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          flex-direction: row; }
+          .hero-section .hero-card .card-body .contact-container div img {
+            padding: 0.5rem; }
+          .hero-section .hero-card .card-body .contact-container div a {
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            white-space: pre;
+            overflow: visible; }
 
 .image-container {
   max-width: 40vw;
@@ -284,5 +448,5 @@ body {
     top: 1rem; }
 
 .background {
-  z-index: 100;
-  background: linear-gradient(181deg, white 5%, #eef5fe 5.1%, transparent 50%), linear-gradient(178deg, #eef5fe 97%, white 97.1%); }
+  padding-bottom: 8rem;
+  background: linear-gradient(181deg, white 5%, #e9f9ff 5.1%, transparent 50%), linear-gradient(178deg, #e9f9ff 86%, white 86.1%); }
