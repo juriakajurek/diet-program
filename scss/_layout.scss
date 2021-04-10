@@ -31,6 +31,7 @@
             align-items: center !important;
         }
         .image-container {
+            min-height: #{'min(50vh, 880px)'} !important;
             img {
                 height: 45vh !important;
             }
@@ -231,6 +232,7 @@ body {
 }
 
 .image-container {
+    min-height: #{'min(80vh, 1440px)'} !important;
     max-width: 40vw;
     vertical-align: middle;
     display: flex;
