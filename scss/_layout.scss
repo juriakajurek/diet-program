@@ -118,6 +118,7 @@ body {
 }
 
 .top-section {
+    min-height: 80vh;
     min-height: #{'min(80vh, 1440px)'} !important;
     height: #{'min(80vh, 1440px)'} !important;
     h5,
