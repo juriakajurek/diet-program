@@ -34,7 +34,6 @@
     }
     .card {
         p {
-            opacity: 0.64 !important;
             font-size: 0.875rem !important;
             line-height: 160% !important;
             padding-left: 1rem !important;
@@ -172,6 +171,7 @@
         }
     }
     p {
+        opacity: 0.64;
         font-weight: 400;
         font-size: 1.125rem;
         line-height: 1.8rem;
