@@ -267,7 +267,8 @@
     margin-right: 0 !important;
     margin: auto !important; }
     .top-section.admission {
-      min-height: min(50vh, 880px) !important; }
+      min-height: min(50vh, 880px) !important;
+      height: min(50vh, 880px) !important; }
     .top-section h5 {
       text-align: center !important; }
       .top-section h5 .subtitle {
@@ -342,7 +343,8 @@ body {
   justify-content: center; }
 
 .top-section {
-  min-height: min(80vh, 1440px) !important; }
+  min-height: min(80vh, 1440px) !important;
+  height: min(80vh, 1440px) !important; }
   .top-section h5,
   .top-section .subtitle {
     font-weight: 700;

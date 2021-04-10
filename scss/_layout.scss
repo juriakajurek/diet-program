@@ -4,6 +4,7 @@
     .top-section {
         &.admission {
             min-height: #{'min(50vh, 880px)'} !important;
+            height: #{'min(50vh, 880px)'} !important;
         }
         margin-right: 0 !important;
         margin: auto !important;
@@ -118,6 +119,7 @@ body {
 
 .top-section {
     min-height: #{'min(80vh, 1440px)'} !important;
+    height: #{'min(80vh, 1440px)'} !important;
     h5,
     .subtitle {
         font-weight: 700;
