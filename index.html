@@ -21,59 +21,15 @@
     </head>
     <body>
         <div class="top-container min-vh-100 h-auto max-vw-100 m-0 p-0">
-            <nav
-                class="navbar navbar-expand-lg navbar-light bg-transparent py-4"
-            >
+            <nav class="navbar navbar-light bg-transparent py-3">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo.svg" alt="logo" class="px-2 mx-2" />
-                    Generator Dietetyczny
+                    <img src="images/logo.svg" alt="logo" class="mx-2" />
+                    <p>Generator Dietetyczny</p>
                 </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="navbarNavAltMarkup">
                     <div
-                        class="navbar-nav ml-auto mr-5 pr-4 d-flex flex-row align-items-center justify-content-center"
+                        class="navbar-nav my-auto pr-4 d-flex flex-row align-items-center justify-content-center"
                     >
-                        <a class="nav-item nav-link mx-3" href="#">
-                            O programie
-                            <span class="sr-only">(current)</span>
-                        </a>
-                        <a class="nav-item nav-link mx-3" href="#"> Zespół </a>
-                        <a class="nav-item nav-link mx-3" href="#">
-                            Dietetycy
-                        </a>
-                        <a class="nav-item nav-link mx-3" href="#"> Kontakt </a>
-
-                        <button
-                            type="button"
-                            class="btn btn-primary btn-sm px-4 m-1"
-                        >
-                            Zarejestruj się
-                        </button>
-                    </div>
-                </div>
-                <div
-                    class="collapse navbar-collapse position-absolute"
-                    id="navbarToggleExternalContent"
-                >
-                    <div class="navbar-nav mobile-nav navbar-toggler">
-                        <a class="nav-item nav-link" href="#">
-                            O programie
-                            <span class="sr-only">(current)</span>
-                        </a>
-                        <a class="nav-item nav-link" href="#"> Zespół </a>
-                        <a class="nav-item nav-link" href="#"> Dietetycy </a>
-                        <a class="nav-item nav-link" href="#"> Kontakt </a>
-
                         <button
                             type="button"
                             class="btn btn-primary btn-sm px-4 m-1"
@@ -84,20 +40,23 @@
                 </div>
             </nav>
             <div
-                class="row h-auto m-5 align-items-center justify-content-center"
+                class="row h-auto mx-5 mt-5 align-items-center justify-content-center"
             >
                 <div
-                    class="col top-section col-lg d-flex flex-column justify-content-center"
+                    class="col top-section admission col-lg d-flex flex-column justify-content-center"
                 >
                     <h5>
                         Rewolucyjne narzędzie
-                        <span>do tworzenia</span> spersonalizowanych diet
+                        <span class="subtitle"
+                            ><span class="pre">do tworzenia</span>
+                            spersonalizowanych diet</span
+                        >
                     </h5>
-                    <p class="mt-1 py-4 pr-5 mr-5">
+                    <p class="mt-1 py-4">
                         Twórz spersonalizowane diety z uwzględnieniem
                         preferencji i chorób pacjenta w mniej niż 30 minut!
                     </p>
-                    <div class="container px-0">
+                    <div class="container btn-container px-0">
                         <button
                             type="button"
                             class="btn btn-primary btn-lg px-4 m-1"
@@ -105,12 +64,12 @@
                             Dołącz teraz
                         </button>
 
-                        <button class="btn btn-link btn-lg">
+                        <button class="btn btn-link btn-lg px-4 m-1">
                             Jak to działa? ›
                         </button>
                     </div>
                 </div>
-                <div class="col top-section">
+                <div class="col top-section admission">
                     <div class="media image-container">
                         <img
                             class=""
@@ -121,20 +80,20 @@
                 </div>
             </div>
             <div
-                class="row min-vh-75 my-5 align-items-center justify-content-center"
+                class="row min-vh-75 align-items-center justify-content-center"
             >
-                <div class="col col-lg py-5">
+                <div class="col col-lg py-5 order-1">
                     <div class="media">
                         <img
-                            class="img-fluid"
+                            class="img-fluid mx-auto"
                             src="images/diety_i_choroby.svg"
                             alt="Diety i choroby"
                         />
                     </div>
                 </div>
-                <div class="col col-lg">
+                <div class="col col-lg order-2">
                     <div class="info-card-section">
-                        <h5 class="px-4 mx-2">
+                        <h5 class="mx-2">
                             Baza diet i chorób <span>w jednym</span> miejscu
                         </h5>
                         <p class="mt-1 px-4 mx-2">
@@ -147,10 +106,10 @@
                 </div>
             </div>
             <div
-                class="row min-vh-75 my-5 align-items-center justify-content-center"
+                class="row min-vh-75 align-items-center justify-content-center"
             >
                 <div
-                    class="col col-lg d-flex flex-column justify-content-center align-items-center"
+                    class="col col-lg d-flex flex-column justify-content-center align-items-center order-2 order-md-1"
                 >
                     <div class="info-card-section">
                         <h5 class="px-4 mx-2">
@@ -163,10 +122,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col col-lg py-5">
+                <div class="col col-lg py-5 order-1 order-md-2">
                     <div class="media">
                         <img
-                            class="img-fluid"
+                            class="img-fluid mx-auto"
                             src="./images/jadlospisy.svg"
                             alt="Jadłospisy"
                         />
@@ -174,18 +133,18 @@
                 </div>
             </div>
             <div
-                class="row min-vh-75 my-5 align-items-center justify-content-center"
+                class="row min-vh-75 align-items-center justify-content-center"
             >
-                <div class="col col-lg py-5">
+                <div class="col col-lg py-5 order-1">
                     <div class="media">
                         <img
-                            class="img-fluid"
-                            src="./images//baza_pacjentow.svg"
+                            class="img-fluid mx-auto px-4"
+                            src="./images/baza_pacjentow.svg"
                             alt="Baza pacjentów"
                         />
                     </div>
                 </div>
-                <div class="col col-lg py-5">
+                <div class="col col-lg py-5 order-1">
                     <div class="info-card-section">
                         <h5 class="px-4 mx-2">
                             Baza pacjentów <span>z wygodnym</span> dostępem
@@ -197,10 +156,11 @@
                     </div>
                 </div>
             </div>
-            <div class="h-auto p-0 m-0">
-                <div class="background m-0 p-0">
+
+            <div class="h-auto p-0 my-2">
+                <div class="background m-0">
                     <div
-                        class="row d-flex justify-content-center align-items-center m-0 p-0 w-100"
+                        class="row d-flex justify-content-center align-items-center m-0 py-5 w-100"
                     >
                         <div
                             class="col col-md card d-flex flex-column justify-content-center align-items-center"
@@ -211,9 +171,9 @@
                                 class="p-5"
                             />
                             <h5 class="px-5 mx-2">Karta pacjenta</h5>
-                            <p class="mt-1 px-5 mx-2">
+                            <p class="px-5 mx-2">
                                 Przyjemny i wygodny proces dodawania nowych
-                                pacjentów podczas wywiad
+                                pacjentów podczas wywiadu
                             </p>
                         </div>
                         <div
@@ -225,7 +185,7 @@
                                 class="p-5"
                             />
                             <h5 class="px-5 mx-2">Lepsza organizacja pracy</h5>
-                            <p class="mt-1 px-5 mx-2">
+                            <p class="px-5 mx-2">
                                 Zwiększysz swoją produktywność i komfort pracy
                             </p>
                         </div>
@@ -233,12 +193,12 @@
                             class="col col-md card d-flex flex-column justify-content-center align-items-center"
                         >
                             <img
-                                src="./images//oszczednosc_czasu.svg"
+                                src="./images/oszczednosc_czasu.svg"
                                 alt="Oszczędność czasu"
                                 class="p-5"
                             />
                             <h5 class="px-5 mx-2">Oszczędność czasu</h5>
-                            <p class="mt-1 px-5 mx-2">
+                            <p class="px-5 mx-2">
                                 Automatyczna generacja personalizowanych
                                 jadłospisów
                             </p>
@@ -247,13 +207,166 @@
                 </div>
             </div>
 
-            <div class="container min-vw-100">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
+            <div class="container prices-section min-vw-100 pb-2">
+                <div class="row d-flex flex-column align-items-center">
+                    <div class="col col-lg">
+                        <h5 class="mx-auto">Elastyczny cennik</h5>
+                        <p class="mt-1 p-4 mx-auto">
+                            Cennik zależy od ilości Twoich pacjentów - zapłać za
+                            tylu pacjentów ilu obsłużysz!
+                        </p>
+                    </div>
+                    <div class="frame my-4 p-4">
+                        <div class="counter">
+                            <div
+                                class="container d-flex flex-row justify-content-center align-items-center"
+                            >
+                                <div class="btn-group-vertical">
+                                    <button
+                                        type="button"
+                                        class="btn"
+                                        onclick="increasePatients()"
+                                    >
+                                        ▲
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn"
+                                        onclick="decreasePatients()"
+                                    >
+                                        ▼
+                                    </button>
+                                </div>
+                                <label class="input-label label" for="patients"
+                                    >Wpisz liczbę pacjentów</label
+                                >
+                                <input
+                                    type="number"
+                                    value="60"
+                                    name="patients"
+                                    id="patients"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="budget" id="budget">
+                            <label class="budget-label label" for="budget"
+                                >Kwota do zapłaty / msc</label
+                            >
+                            <h5 class="mx-auto" id="cost"></h5>
+                            <p class="mx-auto my-0">2,00 zł / pacjent</p>
+                        </div>
+                        <div class="br">
+                            <div class="line"></div>
+                        </div>
+                        <p class="description">
+                            Każdy kolejny pacjent ponad wskazany limit to koszt
+                            <span>6 zł</span>, doliczany do faktury. W każdej
+                            chwili możesz zmienić swój limit, który będzie
+                            zaktualizowany wraz z nowym cyklem rozliczeniowym
+                        </p>
+                        <button
+                            type="button"
+                            class="order-button mobile btn btn-primary btn-highlighted btn-sm px-4 m-1"
+                        >
+                            Zamawiam wybrany pakiet
+                        </button>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="order-button btn btn-primary btn-highlighted btn-sm px-4 m-1"
+                    >
+                        Zamawiam wybrany pakiet
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="try-it-out-section min-vw-100 min-vh-50 m-0 py-5">
+                <div class="row d-flex flex-column align-items-center">
+                    <div class="col col-lg py-5"></div>
+                </div>
+            </div> -->
+
+            <div class="container hero-section vw-80 my-auto">
+                <div class="hero-card">
+                    <img
+                        src="./images/portret.svg"
+                        class="card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Jan Kowalski</h5>
+                        <p class="card-text">
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet.
+                        </p>
+
+                        <div class="container contact-container">
+                            <div class="">
+                                <img
+                                    src="./images/icons/env.svg"
+                                    alt="LinkedIn icon"
+                                />
+                                <a href="#!" class="text-dark"
+                                    >jan.kowalski@programdietetyczny.pl</a
+                                >
+                            </div>
+                            <div class="">
+                                <img
+                                    src="./images/icons/phone.svg"
+                                    alt="LinkedIn icon"
+                                />
+                                <a href="#!" class="text-dark"
+                                    >+48 509 345 648</a
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer class="footer text-center my-4">
+            <div class="container mt-5 pt-5">
+                <section>
+                    <a
+                        class="btn btn-link btn-floating btn-lg m-1"
+                        href="#!"
+                        role="button"
+                        ><img
+                            src="./images/icons/linkedin.svg"
+                            alt="LinkedIn icon"
+                    /></a>
+                    <a
+                        class="btn btn-link btn-floating btn-lg m-1"
+                        href="#!"
+                        role="button"
+                        ><img
+                            src="images/icons/facebook.svg"
+                            alt="Facebook icon"
+                    /></a>
+                    <a
+                        class="btn btn-link btn-floating btn-lg m-1"
+                        href="#!"
+                        role="button"
+                        ><img
+                            src="./images/icons/twitter.svg"
+                            alt="Twitter icon"
+                    /></a>
+                </section>
+            </div>
+            <div class="text-center text-dark p-3">
+                <a class="text-dark" href="#!"
+                    >©Program Dietetyczny
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script></a
+                >
+            </div>
+        </footer>
     </body>
     <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -265,5 +378,6 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"
     ></script>
+
     <script src="script.js"></script>
 </html>
