@@ -267,7 +267,9 @@
     margin-right: 0 !important;
     margin: auto !important; }
     .top-section.admission {
-      min-height: min(50vh, 880px) !important; }
+      min-height: 50vh;
+      min-height: min(50vh, 880px) !important;
+      height: min(50vh, 880px) !important; }
     .top-section h5 {
       text-align: center !important; }
       .top-section h5 .subtitle {
@@ -287,8 +289,12 @@
     .top-section .btn-container {
       flex-direction: column !important;
       align-items: center !important; }
-    .top-section .image-container img {
-      height: 45vh !important; }
+    .top-section .image-container {
+      min-height: 50vh;
+      min-height: min(50vh, 880px) !important;
+      height: min(50vh, 880px) !important; }
+      .top-section .image-container img {
+        height: 45vh !important; }
   .prices-section .col p {
     opacity: 0.8;
     font-size: 1.25rem !important;
@@ -340,7 +346,9 @@ body {
   justify-content: center; }
 
 .top-section {
-  min-height: min(80vh, 1440px) !important; }
+  min-height: 80vh;
+  min-height: min(80vh, 1440px) !important;
+  height: min(80vh, 1440px) !important; }
   .top-section h5,
   .top-section .subtitle {
     font-weight: 700;
@@ -434,6 +442,9 @@ body {
             overflow: visible; }
 
 .image-container {
+  min-height: 80vh;
+  min-height: min(80vh, 1440px) !important;
+  height: min(80vh, 1440px) !important;
   max-width: 40vw;
   vertical-align: middle;
   display: flex;
