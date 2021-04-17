@@ -1,6 +1,9 @@
 @import 'base';
 
 @media (max-width: 992px) {
+    .col {
+        min-width: 320px !important;
+    }
     .top-section {
         &.admission {
             min-height: 50vh;
@@ -85,6 +88,25 @@
             }
         }
     }
+    .background {
+        padding-top: 0rem !important;
+        padding-bottom: 6rem !important;
+        background: linear-gradient(
+                177deg,
+                white 8%,
+                $background-light-color 8.1%,
+                transparent 50%
+            ),
+            linear-gradient(
+                182deg,
+                $background-light-color 94%,
+                $violet-purple 94.1%
+            ) !important;
+        .row {
+            padding-bottom: 0;
+            padding-top: 4rem;
+        }
+    }
 }
 
 body {
@@ -103,8 +125,14 @@ body {
     max-width: 700px;
     min-width: 375px;
 }
+// .row {
+//     max-width: 2000px;
+// }
 
 .top-container {
+    .navbar {
+        max-width: 1400px;
+    }
     width: 100%;
     overflow-x: hidden;
     background-image: linear-gradient(
@@ -118,6 +146,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .top-section {
@@ -258,11 +287,12 @@ body {
 
 .background {
     padding-bottom: 8rem;
+    padding-top: 8rem;
     background: linear-gradient(
             181deg,
-            white 5%,
-            $background-light-color 5.1%,
+            transparent 10%,
+            $background-light-color 10.1%,
             transparent 50%
         ),
-        linear-gradient(178deg, $background-light-color 86%, white 86.1%);
+        linear-gradient(178deg, $background-light-color 86%, transparent 86.1%);
 }

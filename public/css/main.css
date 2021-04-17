@@ -28,6 +28,9 @@
     line-height: 160% !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important; }
+  .prices-section .col {
+    margin: 0 !important;
+    padding: 0 !important; }
   .prices-section .frame {
     width: 90vw !important;
     flex-direction: column !important; }
@@ -47,10 +50,22 @@
         margin-bottom: 0 !important; }
         .prices-section .frame .budget h5 span {
           font-size: 1.5rem !important; }
-  .order-button {
-    display: none !important; }
-    .order-button.mobile {
-      display: inline-block !important; } }
+  .try-it-out-section {
+    background-image: none !important;
+    background: linear-gradient(181deg, transparent 5%, #572d80 5.1%, transparent 50%), linear-gradient(178deg, #572d80 94%, transparent 94.1%) !important;
+    padding: 0 !important;
+    padding-bottom: 8rem !important; }
+    .try-it-out-section .mobile-image {
+      display: block !important; }
+      .try-it-out-section .mobile-image .media img {
+        min-width: 75%; }
+    .try-it-out-section .info-card {
+      position: static !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center; }
+      .try-it-out-section .info-card .order-button {
+        margin: 0 !important; } }
 
 .navbar .navbar-brand {
   display: flex;
@@ -249,12 +264,38 @@
     display: none; }
 
 .try-it-out-section {
-  min-height: 50vh;
-  max-height: 1000px;
-  background-image: url("./images/try-it-out.svg") !important;
-  background-size: contain;
+  height: auto;
+  max-width: 2000px;
+  max-width: min(80vw, 2000px) !important;
+  background-image: url("./images/try-it-out.svg");
+  background-size: auto;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  overflow: visible !important;
+  padding: 10rem; }
+  .try-it-out-section .mobile-image {
+    display: none; }
+  .try-it-out-section .info-card {
+    position: relative;
+    right: 10rem;
+    padding-right: 10rem; }
+    .try-it-out-section .info-card h5 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      color: white; }
+    .try-it-out-section .info-card p {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      color: white; }
+    .try-it-out-section .info-card .order-button {
+      font-weight: 700;
+      margin-left: 2rem;
+      background: white !important;
+      color: #333333 !important; }
 
 .footer {
   opacity: 0.8;
@@ -263,6 +304,8 @@
   line-height: 1.5rem; }
 
 @media (max-width: 992px) {
+  .col {
+    min-width: 320px !important; }
   .top-section {
     margin-right: 0 !important;
     margin: auto !important; }
@@ -317,7 +360,14 @@
     flex-direction: column !important; }
     .hero-section .contact-container div {
       display: flex !important;
-      flex-direction: column !important; } }
+      flex-direction: column !important; }
+  .background {
+    padding-top: 0rem !important;
+    padding-bottom: 6rem !important;
+    background: linear-gradient(177deg, white 8%, #e9f9ff 8.1%, transparent 50%), linear-gradient(182deg, #e9f9ff 94%, #572d80 94.1%) !important; }
+    .background .row {
+      padding-bottom: 0;
+      padding-top: 4rem; } }
 
 body {
   overflow-x: hidden;
@@ -343,7 +393,10 @@ body {
   min-height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+  .top-container .navbar {
+    max-width: 1400px; }
 
 .top-section {
   min-height: 80vh;
@@ -460,4 +513,5 @@ body {
 
 .background {
   padding-bottom: 8rem;
-  background: linear-gradient(181deg, white 5%, #e9f9ff 5.1%, transparent 50%), linear-gradient(178deg, #e9f9ff 86%, white 86.1%); }
+  padding-top: 8rem;
+  background: linear-gradient(181deg, transparent 10%, #e9f9ff 10.1%, transparent 50%), linear-gradient(178deg, #e9f9ff 86%, transparent 86.1%); }
