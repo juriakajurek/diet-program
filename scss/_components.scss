@@ -58,7 +58,10 @@
             .counter {
                 background-image: url('./images/counter-down.svg') !important;
                 margin-top: 1rem;
-                padding-bottom: 1rem;
+                padding-bottom: 1rem; 
+                .btn-group-vertical {
+                    margin-left: 1rem !important;
+            }
             }
             .br {
                 visibility: hidden !important ;
@@ -251,6 +254,7 @@
             .btn-group-vertical {
                 height: 100% !important;
                 margin: 0.5rem;
+                margin-left: 0.1rem;
                 .btn {
                     height: 50% !important;
                     padding-top: 1.5rem;
