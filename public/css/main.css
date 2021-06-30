@@ -517,5 +517,5 @@ body {
 
 .background {
   padding-bottom: 8rem;
-  padding-top: 8rem;
+  padding-top: 2rem;
   background: linear-gradient(181deg, transparent 10%, #e9f9ff 10.1%, transparent 50%), linear-gradient(178deg, #e9f9ff 86%, transparent 86.1%); }
