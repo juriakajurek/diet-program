@@ -1,218 +1,156 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Generator Dietetyczny</title>
-        <link rel="icon" href="./images//logo.svg" type="image/x-icon" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./public/css/main.css" type="text/css" />
-    </head>
-    <body>
-        <div class="top-container min-vh-100 h-auto max-vw-100 m-0 p-0">
-            <nav class="navbar navbar-light bg-transparent py-3 w-100">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.svg" alt="logo" class="mx-2" />
-                    <p>Generator Dietetyczny</p>
-                </a>
-                <div class="navbar-nav" id="navbarNavAltMarkup">
-                    <div
-                        class="navbar-nav my-auto pr-4 d-flex flex-row align-items-center justify-content-center"
-                    >
-                        <button
-                            type="button"
-                            class="btn btn-primary btn-sm px-4 m-1"
-                        >
-                            Zarejestruj się
-                        </button>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Generator Dietetyczny</title>
+    <link rel="icon" href="./images//logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./public/css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div class="top-container min-vh-100 h-auto max-vw-100 m-0 p-0">
+        <nav class="navbar navbar-light bg-transparent py-3 w-100">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="logo" class="mx-2" />
+                <p>Generator Dietetyczny</p>
+            </a>
+            <div class="navbar-nav" id="navbarNavAltMarkup">
+                <div class="navbar-nav my-auto pr-4 d-flex flex-row align-items-center justify-content-center">
+                    <button type="button" class="btn btn-primary btn-sm px-4 m-1">
+                        Zarejestruj się
+                    </button>
                 </div>
-            </nav>
-            <div
-                class="row h-auto mx-5 mt-5 align-items-center justify-content-center"
-            >
-                <div
-                    class="col top-section admission col-lg d-flex flex-column justify-content-center"
-                >
-                    <h5>
-                        Rewolucyjne narzędzie
-                        <span class="subtitle"
-                            ><span class="pre">do tworzenia</span>
-                            spersonalizowanych diet</span
-                        >
+            </div>
+        </nav>
+        <div class="row h-auto mx-5 mt-5 align-items-center justify-content-center">
+            <div class="col top-section admission col-lg d-flex flex-column justify-content-center">
+                <h5>
+                    Rewolucyjne narzędzie
+                    <span class="subtitle"><span class="pre">do tworzenia</span>
+                        spersonalizowanych diet</span>
+                </h5>
+                <p class="mt-1 py-4">
+                    Twórz spersonalizowane diety z uwzględnieniem
+                    preferencji i chorób pacjenta w mniej niż 30 minut!
+                </p>
+                <div class="container btn-container px-0">
+                    <button type="button" class="btn btn-primary btn-lg px-4 m-1">
+                        Dołącz teraz
+                    </button>
+
+                    <button class="btn btn-link btn-lg px-4 m-1">
+                        Jak to działa? ›
+                    </button>
+                </div>
+            </div>
+            <div class="col top-section admission">
+                <div class="media image-container">
+                    <img class="" src="./images//generacja_i_kalendarz.svg" alt="Generacja i kalendarz" />
+                </div>
+            </div>
+        </div>
+        <div class="row min-vh-75 align-items-center justify-content-center">
+            <div class="col col-lg py-5 order-1">
+                <div class="media">
+                    <img class="img-fluid mx-auto" src="images/diety_i_choroby.svg" alt="Diety i choroby" />
+                </div>
+            </div>
+            <div class="col col-lg order-2">
+                <div class="info-card-section">
+                    <h5 class="mx-2">
+                        Baza diet i chorób <span>w jednym</span> miejscu
                     </h5>
-                    <p class="mt-1 py-4">
-                        Twórz spersonalizowane diety z uwzględnieniem
-                        preferencji i chorób pacjenta w mniej niż 30 minut!
+                    <p class="mt-1 px-4 mx-2">
+                        Wybierz chorobę na jaką cierpi pacjent
+                        <span>a algorytm</span> uwzględni ją w jadłospisie.
+                        Masz do wyboru również nomenklatury diet. Wybierz
+                        jaką chcesz zastosować - resztę zrobi algorytm.
                     </p>
-                    <div class="container btn-container px-0">
-                        <button
-                            type="button"
-                            class="btn btn-primary btn-lg px-4 m-1"
-                        >
-                            Dołącz teraz
-                        </button>
+                </div>
+            </div>
+        </div>
+        <div class="row min-vh-75 align-items-center justify-content-center">
+            <div class="col col-lg d-flex flex-column justify-content-center align-items-center order-2 order-md-1">
+                <div class="info-card-section">
+                    <h5 class="px-4 mx-2">
+                        Jadłospisy <span>na jedno kliknięcie</span>
+                    </h5>
+                    <p class="mt-1 px-4 mx-2">
+                        Generator dobiera najlepiej pasujące potrawy z
+                        naszej bazy oraz uwzględnia wszystkie wykluczenia.
+                        Twórz spersonalizowane diety szybko i pewnie.
+                    </p>
+                </div>
+            </div>
+            <div class="col col-lg py-5 order-1 order-md-2">
+                <div class="media">
+                    <img class="img-fluid mx-auto" src="./images/jadlospisy.svg" alt="Jadłospisy" />
+                </div>
+            </div>
+        </div>
+        <div class="row min-vh-75 align-items-center justify-content-center">
+            <div class="col col-lg py-5">
+                <div class="media">
+                    <img class="img-fluid mx-auto px-4" src="./images/baza_pacjentow.svg" alt="Baza pacjentów" />
+                </div>
+            </div>
+            <div class="col col-lg pt-5 pb-0">
+                <div class="info-card-section">
+                    <h5 class="px-4 mx-2">
+                        Baza pacjentów <span>z wygodnym</span> dostępem
+                    </h5>
+                    <p class="mt-1 px-4 mx-2">
+                        Każdy program ma bazę pacjentów. Jeśli już z
+                        jakiegoś korzystasz pomożemy Ci przenieść dane!
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                        <button class="btn btn-link btn-lg px-4 m-1">
-                            Jak to działa? ›
-                        </button>
-                    </div>
-                </div>
-                <div class="col top-section admission">
-                    <div class="media image-container">
-                        <img
-                            class=""
-                            src="./images//generacja_i_kalendarz.svg"
-                            alt="Generacja i kalendarz"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div
-                class="row min-vh-75 align-items-center justify-content-center"
-            >
-                <div class="col col-lg py-5 order-1">
-                    <div class="media">
-                        <img
-                            class="img-fluid mx-auto"
-                            src="images/diety_i_choroby.svg"
-                            alt="Diety i choroby"
-                        />
-                    </div>
-                </div>
-                <div class="col col-lg order-2">
-                    <div class="info-card-section">
-                        <h5 class="mx-2">
-                            Baza diet i chorób <span>w jednym</span> miejscu
-                        </h5>
-                        <p class="mt-1 px-4 mx-2">
-                            Wybierz chorobę na jaką cierpi pacjent
-                            <span>a algorytm</span> uwzględni ją w jadłospisie.
-                            Masz do wyboru również nomenklatury diet. Wybierz
-                            jaką chcesz zastosować - resztę zrobi algorytm.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="row min-vh-75 align-items-center justify-content-center"
-            >
-                <div
-                    class="col col-lg d-flex flex-column justify-content-center align-items-center order-2 order-md-1"
-                >
-                    <div class="info-card-section">
-                        <h5 class="px-4 mx-2">
-                            Jadłospisy <span>na jedno kliknięcie</span>
-                        </h5>
-                        <p class="mt-1 px-4 mx-2">
-                            Generator dobiera najlepiej pasujące potrawy z
-                            naszej bazy oraz uwzględnia wszystkie wykluczenia.
-                            Twórz spersonalizowane diety szybko i pewnie.
-                        </p>
-                    </div>
-                </div>
-                <div class="col col-lg py-5 order-1 order-md-2">
-                    <div class="media">
-                        <img
-                            class="img-fluid mx-auto"
-                            src="./images/jadlospisy.svg"
-                            alt="Jadłospisy"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div
-                class="row min-vh-75 align-items-center justify-content-center"
-            >
-                <div class="col col-lg py-5">
-                    <div class="media">
-                        <img
-                            class="img-fluid mx-auto px-4"
-                            src="./images/baza_pacjentow.svg"
-                            alt="Baza pacjentów"
-                        />
-                    </div>
-                </div>
-                <div class="col col-lg pt-5 pb-0">
-                    <div class="info-card-section">
-                        <h5 class="px-4 mx-2">
-                            Baza pacjentów <span>z wygodnym</span> dostępem
-                        </h5>
-                        <p class="mt-1 px-4 mx-2">
-                            Każdy program ma bazę pacjentów. Jeśli już z
-                            jakiegoś korzystasz pomożemy Ci przenieść dane!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="h-auto p-0 mt-2 min-vw-100">
-                <div class="background m-0 min-vw-100">
-                    <div>
-                        <div
-                            class="row d-flex justify-content-center align-items-center m-0 w-100"
-                        >
-                            <div
-                                class="col col-md card d-flex flex-column justify-content-center align-items-center"
-                            >
-                                <img
-                                    src="images/karta_pacjenta.svg"
-                                    alt="Karta pacjenta"
-                                    class="p-5"
-                                />
-                                <h5 class="px-5 mx-2">Karta pacjenta</h5>
-                                <p class="px-5 mx-2">
-                                    Przyjemny i wygodny proces dodawania nowych
-                                    pacjentów podczas wywiadu
-                                </p>
-                            </div>
-                            <div
-                                class="col col-md card d-flex flex-column justify-content-center align-items-center"
-                            >
-                                <img
-                                    src="./images/organizacja_pracy.svg"
-                                    alt="Organizacja pracy"
-                                    class="p-5"
-                                />
-                                <h5 class="px-5 mx-2">
-                                    Lepsza organizacja pracy
-                                </h5>
-                                <p class="px-5 mx-2">
-                                    Zwiększysz swoją produktywność i komfort
-                                    pracy
-                                </p>
-                            </div>
-                            <div
-                                class="col col-md card d-flex flex-column justify-content-center align-items-center"
-                            >
-                                <img
-                                    src="./images/oszczednosc_czasu.svg"
-                                    alt="Oszczędność czasu"
-                                    class="p-5"
-                                />
-                                <h5 class="px-5 mx-2">Oszczędność czasu</h5>
-                                <p class="px-5 mx-2">
-                                    Automatyczna generacja personalizowanych
-                                    jadłospisów
-                                </p>
-                            </div>
+        <div class="h-auto p-0 mt-2 min-vw-100">
+            <div class="background m-0 min-vw-100">
+                <div>
+                    <div class="row d-flex justify-content-center align-items-center m-0 w-100">
+                        <div class="col col-md card d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/karta_pacjenta.svg" alt="Karta pacjenta" class="p-5" />
+                            <h5 class="px-5 mx-2">Karta pacjenta</h5>
+                            <p class="px-5 mx-2">
+                                Przyjemny i wygodny proces dodawania nowych
+                                pacjentów podczas wywiadu
+                            </p>
+                        </div>
+                        <div class="col col-md card d-flex flex-column justify-content-center align-items-center">
+                            <img src="./images/organizacja_pracy.svg" alt="Organizacja pracy" class="p-5" />
+                            <h5 class="px-5 mx-2">
+                                Lepsza organizacja pracy
+                            </h5>
+                            <p class="px-5 mx-2">
+                                Zwiększysz swoją produktywność i komfort
+                                pracy
+                            </p>
+                        </div>
+                        <div class="col col-md card d-flex flex-column justify-content-center align-items-center">
+                            <img src="./images/oszczednosc_czasu.svg" alt="Oszczędność czasu" class="p-5" />
+                            <h5 class="px-5 mx-2">Oszczędność czasu</h5>
+                            <p class="px-5 mx-2">
+                                Automatyczna generacja personalizowanych
+                                jadłospisów
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- <div class="container prices-section min-vw-100 pb-2">
+        <!-- <div class="container prices-section min-vw-100 pb-2">
                 <div class="row d-flex flex-column align-items-center">
                     <div class="col col-lg">
                         <h5 class="mx-auto">Elastyczny cennik</h5>
@@ -287,131 +225,84 @@
                 </div>
             </div> -->
 
-            <div class="h-auto p-0 mb-2 min-vw-100">
-                <div
-                    class="try-it-out-section m-0 min-vw-100 d-flex align-items-center justify-content-center"
-                >
-                    <div
-                        class="row w-100 d-flex flex-column align-items-center justify-content-center"
-                    >
-                        <div class="col col-lg mobile-image w-100">
-                            <div class="media">
-                                <img
-                                    class="img-fluid mx-auto px-4"
-                                    src="./images/try-it-out-mobile.svg"
-                                    alt="Baza pacjentów"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="info-card col col-lg">
-                            <h5 class="px-4 mx-2">Wypróbuj za darmo!</h5>
-                            <p class="mt-1 px-4 mx-2">
-                                Zapisz się do wersji BETA i korzystaj przez
-                                miesiąc z wszystkich funkcjonalności jakie
-                                oferuje aplikacja. Całkowicie za darmo.
-                            </p>
-                            <button
-                                type="button"
-                                class="order-button btn btn-primary btn-highlighted btn-sm px-3"
-                            >
-                                Tak, chcę wypróbować
-                            </button>
+        <div class="h-auto p-0 mb-2 min-vw-100">
+            <div class="try-it-out-section m-0 min-vw-100 d-flex align-items-center justify-content-center">
+                <div class="row w-100 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col col-lg mobile-image w-100">
+                        <div class="media">
+                            <img class="img-fluid mx-auto px-4" src="./images/try-it-out-mobile.svg"
+                                alt="Baza pacjentów" />
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="container hero-section vw-80 mt-5 my-auto d-flex">
-                <div class="hero-card">
-                    <img
-                        src="./images/portret.svg"
-                        class="card-img-top"
-                        alt="..."
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">Jan Kowalski</h5>
-                        <p class="card-text">
-                            Amet minim mollit non deserunt ullamco est sit
-                            aliqua dolor do amet sint. Velit officia consequat
-                            duis enim velit mollit. Exercitation veniam
-                            consequat sunt nostrud amet.
+                    <div class="info-card col col-lg">
+                        <h5 class="px-4 mx-2">Wypróbuj za darmo!</h5>
+                        <p class="mt-1 px-4 mx-2">
+                            Zapisz się do wersji BETA i korzystaj przez
+                            miesiąc z wszystkich funkcjonalności jakie
+                            oferuje aplikacja. Całkowicie za darmo.
                         </p>
-
-                        <div class="container contact-container">
-                            <div class="">
-                                <img
-                                    src="./images/icons/env.svg"
-                                    alt="LinkedIn icon"
-                                />
-                                <a href="#!" class="text-dark"
-                                    >jan.kowalski@programdietetyczny.pl</a
-                                >
-                            </div>
-                            <div class="">
-                                <img
-                                    src="./images/icons/phone.svg"
-                                    alt="LinkedIn icon"
-                                />
-                                <a href="#!" class="text-dark"
-                                    >+48 509 345 648</a
-                                >
-                            </div>
-                        </div>
+                        <button type="button" class="order-button btn btn-primary btn-highlighted btn-sm px-3">
+                            Tak, chcę wypróbować
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="footer text-center my-4">
-            <div class="container mt-5 pt-5">
-                <section>
-                    <a
-                        class="btn btn-link btn-floating btn-lg m-1"
-                        href="#!"
-                        role="button"
-                        ><img
-                            src="./images/icons/linkedin.svg"
-                            alt="LinkedIn icon"
-                    /></a>
-                    <a
-                        class="btn btn-link btn-floating btn-lg m-1"
-                        href="#!"
-                        role="button"
-                        ><img
-                            src="images/icons/facebook.svg"
-                            alt="Facebook icon"
-                    /></a>
-                    <a
-                        class="btn btn-link btn-floating btn-lg m-1"
-                        href="#!"
-                        role="button"
-                        ><img
-                            src="./images/icons/twitter.svg"
-                            alt="Twitter icon"
-                    /></a>
-                </section>
-            </div>
-            <div class="text-center text-dark p-3">
-                <a class="text-dark" href="#!"
-                    >©Program Dietetyczny
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script></a
-                >
-            </div>
-        </footer>
-    </body>
-    <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"
-    ></script>
+        <div class="container hero-section vw-80 mt-5 my-auto d-flex">
+            <div class="hero-card">
+                <img src="./images/michal.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Michał Chojaczyk</h5>
+                    <p class="card-text">
+                        Nadal nie jesteś przekonany? A może masz dodatkowe pytania? W razie jakichkolwiek wątpliwości
+                        zachęcam do kontaktu!
+                    </p>
 
-    <script src="script.js"></script>
+                    <div class="container contact-container">
+                        <div class="">
+                            <img src="./images/icons/env.svg" alt="LinkedIn icon" />
+                            <a href="#!" class="text-dark">kontakt@programdietetyczny.pl</a>
+                        </div>
+                        <div class="">
+                            <img src="./images/icons/phone.svg" alt="LinkedIn icon" />
+                            <a href="#!" class="text-dark">+48 782 255 431</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center my-4">
+        <div class="container mt-5 pt-5">
+            <section>
+                <a class="btn btn-link btn-floating btn-lg m-1"
+                    href="https://www.linkedin.com/company/programdietetyczny-pl/" role="button" target="_blank"><img
+                        src="./images/icons/linkedin.svg" alt="LinkedIn icon" /></a>
+                <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.facebook.com/ProgramDietetyczny"
+                    role="button" target="_blank"><img src="images/icons/facebook.svg" alt="Facebook icon" /></a>
+                <a class="btn btn-link btn-floating btn-lg m-1" href="https://twitter.com/PDietetyczny" role="button"
+                    target="_blank"><img src="./images/icons/twitter.svg" alt="Twitter icon" /></a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3">
+            <a class="text-dark" href="#!">©Program Dietetyczny
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
 </html>
