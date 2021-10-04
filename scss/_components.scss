@@ -41,6 +41,10 @@
         }
     }
     .prices-section {
+        .col {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
         .frame {
             width: 90vw !important;
             flex-direction: column !important;
@@ -54,7 +58,10 @@
             .counter {
                 background-image: url('./images/counter-down.svg') !important;
                 margin-top: 1rem;
-                padding-bottom: 1rem;
+                padding-bottom: 1rem; 
+                .btn-group-vertical {
+                    margin-left: 1rem !important;
+            }
             }
             .br {
                 visibility: hidden !important ;
@@ -70,10 +77,33 @@
             }
         }
     }
-    .order-button {
-        display: none !important;
-        &.mobile {
-            display: inline-block !important;
+    .try-it-out-section {
+        .mobile-image {
+            display: block !important;
+            .media {
+                img {
+                    min-width: 75%;
+                }
+            }
+        }
+        background-image: none !important;
+        background: linear-gradient(
+                181deg,
+                transparent 5%,
+                $violet-purple 5.1%,
+                transparent 50%
+            ),
+            linear-gradient(178deg, $violet-purple 94%, transparent 94.1%) !important;
+        padding: 0 !important;
+        padding-bottom: 8rem !important;
+        .info-card {
+            position: static !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            text-align: center;
+            .order-button {
+                margin: 0 !important;
+            }
         }
     }
 }
@@ -224,6 +254,7 @@
             .btn-group-vertical {
                 height: 100% !important;
                 margin: 0.5rem;
+                margin-left: 0.1rem;
                 .btn {
                     height: 50% !important;
                     padding-top: 1.5rem;
@@ -327,12 +358,44 @@
 }
 
 .try-it-out-section {
-    min-height: 50vh;
-    max-height: 1000px;
-    background-image: url('./images/try-it-out.svg') !important;
-    background-size: contain;
+    height: auto;
+    max-width: 2000px;
+    max-width: #{'min(80vw, 2000px)'} !important;
+
+    background-image: url('./images/try-it-out.svg');
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: visible !important;
+    padding: 10rem;
+    .mobile-image {
+        display: none;
+    }
+    .info-card {
+        h5 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            color: white;
+        }
+        p {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            color: white;
+        }
+        .order-button {
+            font-weight: 700;
+            margin-left: 2rem;
+            background: white !important;
+            color: $primary-color !important;
+        }
+        position: relative;
+        right: 10rem;
+        padding-right: 10rem;
+    }
 }
 
 .footer {
