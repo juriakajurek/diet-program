@@ -83,7 +83,7 @@
 
 .btn-primary {
   color: white !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.875rem;
   line-height: 140%;
   background-color: #ff6984 !important;
@@ -91,6 +91,17 @@
   border-radius: 0.5rem; }
   .btn-primary:hover {
     opacity: 0.9; }
+
+.btn-outline-primary {
+  color: #ff6984 !important;
+  background-color: transparent !important;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 140%;
+  border-color: #ff6984 !important;
+  border-radius: 0.5rem; }
+  .btn-outline-primary:hover {
+    text-decoration: underline; }
 
 .btn-link {
   font-weight: 500;
@@ -154,6 +165,24 @@
     .card p span {
       white-space: pre; }
 
+.image-col-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgrounds/bg_1.svg");
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .image-col-bg .bg-img {
+    min-height: 90vh;
+    z-index: -1;
+    position: relative;
+    left: -5rem; }
+
+.top-section .image-container {
+  position: relative;
+  left: -20%;
+  top: -102%; }
+
 .prices-section .frame {
   width: 80vw;
   max-width: 1400px;
@@ -191,11 +220,11 @@
         margin: 0.125rem;
         background-color: #ededed;
         border-radius: 1rem; }
-    .prices-section .frame .counter input[type='number']::-webkit-outer-spin-button,
-    .prices-section .frame .counter input[type='number']::-webkit-inner-spin-button {
+    .prices-section .frame .counter input[type="number"]::-webkit-outer-spin-button,
+    .prices-section .frame .counter input[type="number"]::-webkit-inner-spin-button {
       -webkit-appearance: none;
       margin: 0; }
-    .prices-section .frame .counter input[type='number'] {
+    .prices-section .frame .counter input[type="number"] {
       -moz-appearance: textfield;
       background-color: transparent;
       border: none;
@@ -208,7 +237,7 @@
       padding-bottom: 2rem;
       padding-left: 1rem;
       margin: 0; }
-      .prices-section .frame .counter input[type='number']:focus {
+      .prices-section .frame .counter input[type="number"]:focus {
         outline: none; }
     .prices-section .frame .counter h5 {
       padding: 2rem;
@@ -390,7 +419,6 @@ body {
 .top-container {
   width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient(183deg, #eef5fe 94vh, white 94.1vh);
   color: #333333;
   height: auto;
   min-height: 75vh;
@@ -408,23 +436,23 @@ body {
   margin-bottom: 3rem; }
   .top-section h5,
   .top-section .subtitle {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: #5f308b; }
-    .top-section h5 .pre,
-    .top-section .subtitle .pre {
-      white-space: pre; }
-  .top-section p {
-    opacity: 0.8;
-    padding-right: 8rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    color: #333333; }
+    color: #5f308b; }
+    .top-section h5 .bold,
+    .top-section .subtitle .bold {
+      font-weight: 800; }
+  .top-section p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(51, 51, 51, 0.8); }
   .top-section .btn-container {
     display: flex;
     align-items: flex-start; }
+  .top-section .pre {
+    white-space: pre; }
 
 .prices-section {
   width: 100vw !important;
