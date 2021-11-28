@@ -1,4 +1,7 @@
 @media (max-width: 992px) {
+  .btn-container {
+    position: relative;
+    left: -12%; }
   .image-col-bg .bg-img {
     left: -12rem !important;
     top: -10rem !important;
@@ -201,7 +204,7 @@
       left: -160%;
       top: -60%; }
       .image-col-bg .bg-img.left.centered {
-        left: -140%;
+        left: -137%;
         top: -60%; }
     .image-col-bg .bg-img.right {
       max-width: 130vw;
